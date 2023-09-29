@@ -15,8 +15,6 @@
     &__image {
         width: 100%;
         max-width: 500px;
-        margin-right: 24px;
-        margin-left: 24px;
         border-radius: 5px;
 
         @media (max-width: 768px) {
@@ -35,7 +33,10 @@
             padding: 15px;
             font-family: variaveis.$fontPrincipal;
             font-size: 2em;
+        }
 
+        &__text {
+            margin: 0 24px;
         }
     }
 }
