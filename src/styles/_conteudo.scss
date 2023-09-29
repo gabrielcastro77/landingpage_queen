@@ -1,0 +1,41 @@
+@use 'variaveis';
+
+.conteudo {
+    max-width: 1024px;
+    height: 312px;
+    width: 100%;
+    margin: 50px auto 50px;
+    display: flex;
+
+    @media (max-width: 768px) {
+        display: inline;
+        
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 500px;
+        margin-right: 24px;
+        margin-left: 24px;
+        border-radius: 5px;
+
+        @media (max-width: 768px) {
+            display: block;
+            margin: 50px auto 20px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        &__title {
+            padding: 15px;
+            font-family: variaveis.$fontPrincipal;
+            font-size: 2em;
+
+        }
+    }
+}
